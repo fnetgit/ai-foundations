@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     new-dataset-tsc
+Instances:    30
+Attributes:   27
+              idade
+              altura
+              sexo
+              cor_pele
+              tipo_cabelo
+              oculos
+              genero_filme_serie_fav
+              genero_estilo_musical_fav
+              passatempo_fav
+              linguagem_programacao_fav
+              so_desktop_utilizado
+              so_mobile_utilizado
+              ide_fav
+              navegador_fav
+              stack_desejada
+              forma_esse_ano
+              terminou_terceiro_ano_escola_publica
+              ja_tem_uma_graduacao
+              em_relacionamento_afetivo
+              atividade_remunerada
+              estado_civil
+              cidade
+              mora_com_pais
+              tem_irmaos
+              tem_animal_estimacao
+              tem_cnh
+              dirige
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 246.0
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                                          Cluster#
+Attribute                                          Full Data                     0                     1
+                                                        (30)                  (18)                  (12)
+========================================================================================================
+idade                                                18 - 20               18 - 20               18 - 20
+altura                                           1.61 - 1.70           1.61 - 1.70           1.71 - 1.80
+sexo                                               Masculino             Masculino             Masculino
+cor_pele                                              Branca                 Parda                Branca
+tipo_cabelo                                         Ondulado Cacheado/Encaracolado              Ondulado
+oculos                                                   Nao                   Nao                   Sim
+genero_filme_serie_fav                                Terror              Animacao              Fantasia
+genero_estilo_musical_fav                               Rock                  Rock                  Rock
+passatempo_fav                                         Jogar                 Jogar                 Jogar
+linguagem_programacao_fav                             Python                Python                Python
+so_desktop_utilizado                                 Windows               Windows               Windows
+so_mobile_utilizado                                  Android               Android               Android
+ide_fav                                               VSCode                VSCode                VSCode
+navegador_fav                                          Brave                 Brave                Chrome
+stack_desejada                                    Full-Stack            Full-Stack            Full-Stack
+forma_esse_ano                                           Sim                   Sim                   Sim
+terminou_terceiro_ano_escola_publica                     Sim                   Sim                   Sim
+ja_tem_uma_graduacao                                     Nao                   Nao                   Nao
+em_relacionamento_afetivo                                Nao                   Sim                   Nao
+atividade_remunerada                                     Sim                   Sim                   Sim
+estado_civil                                     Solteiro(a)           Solteiro(a)           Solteiro(a)
+cidade                                              Parnaiba              Parnaiba              Parnaiba
+mora_com_pais                                            Sim                   Sim                   Sim
+tem_irmaos                                               Sim                   Sim                   Sim
+tem_animal_estimacao                                     Sim                   Sim                   Sim
+tem_cnh                                                  Nao                   Nao                   Nao
+dirige                                                   Sim                   Sim                   Nao
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      18 ( 60%)
+1      12 ( 40%)

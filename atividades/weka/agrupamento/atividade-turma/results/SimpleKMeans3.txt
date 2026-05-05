@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     new-dataset-tsc
+Instances:    30
+Attributes:   27
+              idade
+              altura
+              sexo
+              cor_pele
+              tipo_cabelo
+              oculos
+              genero_filme_serie_fav
+              genero_estilo_musical_fav
+              passatempo_fav
+              linguagem_programacao_fav
+              so_desktop_utilizado
+              so_mobile_utilizado
+              ide_fav
+              navegador_fav
+              stack_desejada
+              forma_esse_ano
+              terminou_terceiro_ano_escola_publica
+              ja_tem_uma_graduacao
+              em_relacionamento_afetivo
+              atividade_remunerada
+              estado_civil
+              cidade
+              mora_com_pais
+              tem_irmaos
+              tem_animal_estimacao
+              tem_cnh
+              dirige
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 206.0
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                                          Cluster#
+Attribute                                          Full Data                     0                     1                     2                     3                     4
+                                                        (30)                   (6)                   (6)                   (4)                  (11)                   (3)
+==========================================================================================================================================================================
+idade                                                18 - 20               18 - 20               18 - 20                  > 24               18 - 20               18 - 20
+altura                                           1.61 - 1.70           1.61 - 1.70           1.61 - 1.70           1.61 - 1.70           1.71 - 1.80           1.61 - 1.70
+sexo                                               Masculino             Masculino             Masculino             Masculino             Masculino             Masculino
+cor_pele                                              Branca                 Parda                Branca                 Negra                 Parda                Branca
+tipo_cabelo                                         Ondulado                  Liso                  Liso Cacheado/Encaracolado              Ondulado              Ondulado
+oculos                                                   Nao                   Nao                   Sim                   Nao                   Sim                   Nao
+genero_filme_serie_fav                                Terror                Terror              Fantasia               Comedia                  Acao              Animacao
+genero_estilo_musical_fav                               Rock                  Rock                  Rock                   Pop                  Rock                   Rap
+passatempo_fav                                         Jogar                 Jogar              Desenhar                Cantar                 Jogar              Assistir
+linguagem_programacao_fav                             Python            TypeScript                Python                Python                Python                  Java
+so_desktop_utilizado                                 Windows                 Linux                 Linux               Windows               Windows               Windows
+so_mobile_utilizado                                  Android               Android               Android               Android               Android               Android
+ide_fav                                               VSCode                VSCode                VSCode                VSCode                VSCode                VSCode
+navegador_fav                                          Brave                Chrome                 Brave                Chrome                 Brave                 Brave
+stack_desejada                                    Full-Stack            Full-Stack            Full-Stack             Front-End            Full-Stack            Full-Stack
+forma_esse_ano                                           Sim                   Sim                   Sim                   Sim                   Sim                   Sim
+terminou_terceiro_ano_escola_publica                     Sim                   Sim                   Nao                   Sim                   Sim                   Sim
+ja_tem_uma_graduacao                                     Nao                   Nao                   Nao                   Nao                   Nao                   Nao
+em_relacionamento_afetivo                                Nao                   Sim                   Nao                   Sim                   Nao                   Nao
+atividade_remunerada                                     Sim                   Sim                   Sim                   Sim                   Sim                   Sim
+estado_civil                                     Solteiro(a)           Solteiro(a)           Solteiro(a)           Solteiro(a)           Solteiro(a)           Solteiro(a)
+cidade                                              Parnaiba              Parnaiba              Parnaiba              Parnaiba              Parnaiba              Parnaiba
+mora_com_pais                                            Sim                   Sim                   Sim                   Nao                   Sim                   Sim
+tem_irmaos                                               Sim                   Sim                   Sim                   Sim                   Sim                   Sim
+tem_animal_estimacao                                     Sim                   Sim                   Sim                   Sim                   Sim                   Sim
+tem_cnh                                                  Nao                   Nao                   Nao                   Nao                   Nao                   Sim
+dirige                                                   Sim                   Sim                   Sim                   Sim                   Nao                   Sim
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       6 ( 20%)
+1       6 ( 20%)
+2       4 ( 13%)
+3      11 ( 37%)
+4       3 ( 10%)
