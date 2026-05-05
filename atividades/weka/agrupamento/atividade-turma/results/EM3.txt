@@ -1,0 +1,223 @@
+=== Run information ===
+
+Scheme:weka.clusterers.EM -I 100 -N 3 -M 1.0E-6 -S 100
+Relation:     new-dataset-tsc
+Instances:    30
+Attributes:   27
+              idade
+              altura
+              sexo
+              cor_pele
+              tipo_cabelo
+              oculos
+              genero_filme_serie_fav
+              genero_estilo_musical_fav
+              passatempo_fav
+              linguagem_programacao_fav
+              so_desktop_utilizado
+              so_mobile_utilizado
+              ide_fav
+              navegador_fav
+              stack_desejada
+              forma_esse_ano
+              terminou_terceiro_ano_escola_publica
+              ja_tem_uma_graduacao
+              em_relacionamento_afetivo
+              atividade_remunerada
+              estado_civil
+              cidade
+              mora_com_pais
+              tem_irmaos
+              tem_animal_estimacao
+              tem_cnh
+              dirige
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+EM
+==
+
+Number of clusters: 3
+
+
+                                  Cluster
+Attribute                               0  1  2
+                                      (0.47)(0.3)(0.23)
+================================================
+idade
+  18 - 20                               11  6  4
+  21 - 22                                4  2  3
+  23 - 24                                1  2  1
+  > 24                                   2  3  3
+  [total]                               18 13 11
+altura
+  1.50 - 1.60                            2  1  1
+  1.61 - 1.70                            3  8  6
+  1.71 - 1.80                           10  2  2
+  > 1.80                                 3  2  2
+  [total]                               18 13 11
+sexo
+  Masculino                             15  8  8
+  Feminino                               1  3  1
+  [total]                               16 11  9
+cor_pele
+  Branca                                10  3  2
+  Parda                                  6  3  5
+  Negra                                  1  6  3
+  [total]                               17 12 10
+tipo_cabelo
+  Liso                                   5  4  2
+  Ondulado                               8  2  5
+  Cacheado/Encaracolado                  4  6  3
+  [total]                               17 12 10
+oculos
+  Sim                                   12  3  2
+  Nao                                    4  8  7
+  [total]                               16 11  9
+genero_filme_serie_fav
+  Acao                                   3  3  2
+  Animacao                               1  1  5
+  Aventura                               2  1  2
+  Comedia                                1  2  1
+  Documentario                           1  1  1
+  Drama                                  2  2  1
+  Fantasia                               5  1  1
+  Ficcao Cientifica                      3  3  1
+  Musical                                1  1  1
+  Romance                                2  2  1
+  Suspense                               1  1  1
+  Terror                                 4  3  2
+  [total]                               26 21 19
+genero_estilo_musical_fav
+  Rock                                   7  2  5
+  Pop                                    3  3  2
+  Hip-hop                                2  3  1
+  MPB                                    3  3  1
+  Rap                                    2  1  2
+  Sertanejo                              1  2  1
+  Ecletico                               2  2  2
+  Eurobeat                               2  1  1
+  [total]                               22 17 15
+passatempo_fav
+  Assistir                               4  1  1
+  Cantar                                 1  2  1
+  Desenhar                               3  1  2
+  Instrumentos                           2  1  2
+  Jogar                                  8  4  4
+  Futebol                                1  3  1
+  Artes marciais                         1  1  3
+  Ler                                    1  3  1
+  Sinuca                                 1  2  1
+  Programar                              2  1  1
+  [total]                               24 19 17
+linguagem_programacao_fav
+  Java                                   3  1  2
+  Python                                 9  7  3
+  TypeScript                             4  3  4
+  C                                      1  1  2
+  GO                                     1  2  1
+  Lua                                    2  1  1
+  [total]                               20 15 13
+so_desktop_utilizado
+  Windows                               12  3  7
+  Linux                                  4  8  2
+  [total]                               16 11  9
+so_mobile_utilizado
+  Android                               12  9  8
+  IOS                                    4  2  1
+  [total]                               16 11  9
+ide_fav
+  VSCode                                14 10  6
+  IntelliJ                               1  1  2
+  Nvim                                   1  1  2
+  Bloco de Notas                         2  1  1
+  [total]                               18 13 11
+navegador_fav
+  Chrome                                 8  4  2
+  Brave                                  6  3  7
+  Firefox                                2  2  1
+  Edge                                   2  3  1
+  Opera GX                               1  2  1
+  [total]                               19 14 12
+stack_desejada
+  Full-Stack                            10  5  7
+  Back-End                               4  4  2
+  Front-End                              3  3  1
+  [total]                               17 12 10
+forma_esse_ano
+  Sim                                   14  9  7
+  Nao                                    2  2  2
+  [total]                               16 11  9
+terminou_terceiro_ano_escola_publica
+  Sim                                   11  5  6
+  Nao                                    5  6  3
+  [total]                               16 11  9
+ja_tem_uma_graduacao
+  Sim                                    1  2  1
+  Nao                                   15  9  8
+  [total]                               16 11  9
+em_relacionamento_afetivo
+  Sim                                    4  9  3
+  Nao                                   12  2  6
+  [total]                               16 11  9
+atividade_remunerada
+  Sim                                   13 10  7
+  Nao                                    3  1  2
+  [total]                               16 11  9
+estado_civil
+  Solteiro(a)                           15  9  8
+  Casado(a)                              1  2  1
+  Viuvo(a)                               1  1  1
+  Separado(a) judicialmente              1  1  1
+  [total]                               18 13 11
+cidade
+  Anapurus                               1  2  1
+  Agua Doce                              2  1  1
+  Parnaiba                               8  6  7
+  Piracuruca                             2  1  1
+  Teresina                               2  1  1
+  Luzilandia                             2  1  1
+  Tutoia                                 2  1  1
+  Santa Quiteria do Maranhao             1  2  1
+  Sao Paulo                              2  1  1
+  Cocal                                  1  2  1
+  Araioses                               1  2  1
+  Brasilia                               2  1  1
+  Ilha Grande                            1  1  2
+  [total]                               27 22 20
+mora_com_pais
+  Sim                                   13  4  8
+  Nao                                    3  7  1
+  [total]                               16 11  9
+tem_irmaos
+  Sim                                   11  8  8
+  Nao                                    5  3  1
+  [total]                               16 11  9
+tem_animal_estimacao
+  Sim                                   13  7  8
+  Nao                                    3  4  1
+  [total]                               16 11  9
+tem_cnh
+  Sim                                    4  4  3
+  Nao                                   12  7  6
+  [total]                               16 11  9
+dirige
+  Sim                                    5 10  8
+  Nao                                   11  1  1
+  [total]                               16 11  9
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      14 ( 47%)
+1       9 ( 30%)
+2       7 ( 23%)
+
+
+Log likelihood: -21.80544
