@@ -80,3 +80,15 @@ Foram observadas as características predominantes da amostra, como idade entre 
 - **Cluster 0:** 14 pessoas(47%). apresenta como perfil predominante alunos que utilizam Windows, preferem Python, usam Chrome, desejam atuar como Full-Stack, moram com os pais e não dirigem.
 - **Cluster 1:** 9 pessoas(33%).se destaca pelo uso de Linux, preferência por Python, maior presença de pessoas em relacionamento afetivo, que não moram com os pais e dirigem.
 - **Cluster 2:** 7 pessoas(20%). apresenta maior associação com TypeScript, navegador Brave, gosto por animação, uso de Windows e pessoas que dirigem.
+
+---
+
+### Matriz de similaridade
+
+A matriz de similaridade é uma representação tabular que mostra o grau de semelhança entre os dados, onde cada célula representa a similaridade entre dois dados.
+
+Fiz uma matriz de similaridade em [Python](matriz-de-similaridade.py) a partir do arquivo [new-dataset-tsc.csv](new-dataset-tsc.csv). Para calcular a similaridade, comparei as respostas de cada par de alunos e contei quantas colunas tinham valores iguais. Depois, dividi esse total pela quantidade de atributos comparados e converti o resultado em porcentagem.
+
+O resultado foi salvo em [similarity_matrix.csv](similarity_matrix.csv). Nessa matriz, o valor 100 aparece na diagonal principal, pois cada aluno é totalmente semelhante a si mesmo. Já os outros valores mostram o percentual de semelhança entre diferentes alunos.
+
+Essa matriz ajudou a identificar quais alunos têm perfis mais parecidos entre si e serviu como apoio para interpretar melhor os agrupamentos encontrados pelos algoritmos.
